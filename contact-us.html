@@ -50,7 +50,7 @@
                     <p class="mail-text">Welcome to our BRICKAURA</p>
                 </div>
                 <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12 text-right">
-                    <div class="top-nav"> <span class="top-text"><a href="#">View Locations</a> </span> <span class="top-text"><a href="#">+91-9711196943</a></span></div>
+                    <div class="top-nav"> <span class="top-text"><a href="https://www.google.com/maps/place/EMERALD+PLAZA,+Sector+65,+Gurugram,+Haryana+122102/@28.4057888,77.0664823,16.57z/data=!4m6!3m5!1s0x390d2268827039ed:0xa45dde6b8930b6f8!8m2!3d28.4057872!4d77.0683187!16s%2Fg%2F11pcszg8ys?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">View Locations</a> </span> <span class="top-text"><a href="#">+91-9711196943</a></span></div>
                 </div>
             </div>
         </div>
@@ -103,13 +103,6 @@
                         <div class="row">
                            <div class="col-xl-4 col-lg-4 col-md-9 col-sm-12 col-12">
                                 <h1 class="page-title">Contact Us</h1>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-3 col-sm-12 col-12">
-                                <div class="row">
-                                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <div class="btn-action"> <a href="#" class="btn btn-default">How To Apply</a> </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,8 +193,7 @@
                                     <div class="bg-boxshadow pinside60 outline text-center mb30">
                                         <div class="mb40"><i class="icon-briefcase icon-2x icon-default"></i></div>
                                         <h2 class="capital-title">Branch Office</h2>
-                                        <p>2843 Lakewood Drive
-                                            <br> Jersey City, CA 07304</p>
+                                        <p>Emerald plaza sector 65,<br> gurugram, Haryana</p>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -246,7 +238,7 @@
                     <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
                         <div class="newsletter-form">
                             <!-- Newsletter Form -->
-                            <form action="https://jituchauhan.com/borrow/bootstrap-4/newsletter.php" method="post">
+                            <form method="post">
                                 <div class="input-group">
                                     <input type="email" class="form-control" id="newsletter" name="newsletter" placeholder="Write E-Mail Address" required>
                                     <span class="input-group-btn">
@@ -335,26 +327,24 @@
     <script src="js/back-to-top.js" type="text/javascript"></script>
     <script>
     function initMap() {
-        var myLatLng = {
-            lat: 23.0225,
-            lng: 72.5714
-        };
+    var myLatLng = {
+        lat: 28.405769669941048,
+        lng: 77.0683356625176
+    };
 
-        var map = new google.maps.Map(document.getElementById('googleMap'), {
-            zoom: 8,
-            center: myLatLng,
-            scrollwheel: false,
-
-        });
-        var image = 'images/map-pin.png';
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            icon: image,
-            title: 'Hello World!'
-
-        });
-    }
+    var map = new google.maps.Map(document.getElementById('googleMap'), {
+        zoom: 8,
+        center: myLatLng,
+        scrollwheel: false
+    });
+    var image = 'images/map-pin.png';
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: image,
+        title: 'New Location!'
+    });
+}
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?&amp;callback=initMap" async defer></script>
 </body>
